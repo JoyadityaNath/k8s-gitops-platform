@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: haproxy-ingress-controller
+  labels:
+    app: ingress-haproxy
+spec:
+  replicas: 2
+  selector:
+    matchlabels:
+      app: ingress-haproxy
+  template:
+    metadata:
+      labels:
+        app: ingress-haproxy
+    spec:
+      containers:
+        - name: controller
+          image: haproxytech/kubernetes-ingress:latest
+          args:
+            - --ingress.class=ingress-haproxy
+          ports:
+            - containerPort: 80
+            - containerPort: 443
