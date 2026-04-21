@@ -177,3 +177,5 @@ terraform.rc
 myplan
 
 # End of https://mrkandreev.name/snippets/gitignore-generator/#Helm,Python,Terraform
+
+dummy

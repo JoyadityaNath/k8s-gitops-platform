@@ -1,0 +1,30 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress
+spec:
+  ingressClassName: haproxy
+  rules:
+    http:
+      paths:
+        - path: /inventory
+          pathType: Prefix
+          backend:
+            service:
+              name: inventory-service
+              port:
+                number: 80
+        - path: /orders
+          pathType: Prefix
+          backend:
+            service:
+              name: order-service
+              port:
+                number: 80
+        - path: /users
+          pathType: Prefix
+          backend:
+            service:
+              name: user-service
+              port:
+                number: 80
