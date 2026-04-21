@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: user-deployment
   labels:
-    app: user
+    app: users
 spec:
   replicas: 3
   selector:
