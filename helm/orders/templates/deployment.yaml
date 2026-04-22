@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: orders
-          image: joyadityan/orders-service
+          image: joyadityan/orders-service:v1
           ports:
             - containerPort: 5002

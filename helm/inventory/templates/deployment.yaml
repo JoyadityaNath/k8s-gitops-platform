@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: inventory
-          image: joyadityan/inventory-service
+          image: joyadityan/inventory-service:v1
           ports:
             - containerPort: 5003

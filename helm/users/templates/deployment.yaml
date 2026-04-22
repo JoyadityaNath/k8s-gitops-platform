@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: users
-          image: joyadityan/user-service
+          image: joyadityan/user-service:v1
           ports:
             - containerPort: 5001
