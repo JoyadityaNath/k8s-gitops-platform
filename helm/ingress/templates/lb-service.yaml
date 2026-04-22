@@ -5,7 +5,7 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-    app.kubernetes.io/name: haproxy-ingress
+    app.kubernetes.io/name: ingress-haproxy
   ports:
     - name: http
       port: 80
