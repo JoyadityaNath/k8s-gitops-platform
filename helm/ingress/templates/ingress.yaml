@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: ingress
 spec:
-  ingressClassName: haproxy
+  ingressClassName: haproxy-class
   rules:
     - http:
         paths:
